@@ -1,0 +1,1 @@
+This is an interactive color game app which involves DOM manipulation with the use of vanilla JS and CSS/HTML. The webpage is responsive as well.
