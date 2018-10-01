@@ -20,9 +20,16 @@ h1 {
 	margin: 0 auto;
 }
 
+#container2 {
+	margin: 0 auto;
+}
+
 #message {
-	display: inline-block;
-	width: 20%;
+	color: #FFF;
+	line-height: 3em;
+	font-weight: bold;
+	margin: 0 auto;
+	text-align: center;
 }
 
 #stripe {

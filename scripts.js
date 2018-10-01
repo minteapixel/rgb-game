@@ -45,12 +45,30 @@ function setModeButtons() {
 		modeButtons[i].addEventListener("click",function() {
 			modeButtons[0].classList.remove("selected");
 			modeButtons[1].classList.remove("selected");
+			modeButtons[2].classList.remove("selected"); // remove this if it doesn't work
 			this.classList.add("selected");
-			this.textContent === "Easy" ? numSquares = 3 : numSquares = 6;
+			// this.textContent === "Easy" ? numSquares = 3 : numSquares = 6;
+			switch(this.textContent) {
+				case 'Easy':
+					numSquares = 3;
+					break;
+				case 'Hard':
+					numSquares = 6;
+					break;
+				case 'Expert':
+					numSquares = 9;
+					console.log("numSquares = " + numSquares);
+					break;
+				default:
+					numSquares = 6;
+			}
 			reset();
 		});
 	}
 }
+
+
+
 
 resetButton.addEventListener("click", function() {
 	reset();
