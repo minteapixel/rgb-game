@@ -5,7 +5,10 @@ This is an interactive color game app which involves DOM manipulation with the u
 #### Additional Features: 
 - __Flexbox CSS__ - included so that the game would render properly on mobile and tablets. 
 
-- __'Infernal' mode__  features 12 colored squares (that's 3 more squares than the 'hard' mode) and all squares have very similar shades of color.
+- __'Infernal' mode__  features 12 colored squares (that's 3 more squares than the 'hard' mode) and all squares have very similar shades of color. See screenshots below.
+
+## Live Demo
+Play the game here: [https://minteapixel.github.io/rgb-game/](https://minteapixel.github.io/rgb-game/)
 
 ## Screenshots
 ![hard-mode](https://raw.githubusercontent.com/minteapixel/rgb-game/master/screenshots/hard-mode_rgb-game.png)
