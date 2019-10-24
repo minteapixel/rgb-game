@@ -11,8 +11,8 @@ This is an interactive color game app which involves DOM manipulation with the u
 Play the game here: [https://minteapixel.github.io/rgb-game/](https://minteapixel.github.io/rgb-game/)
 
 ## Screenshots
-![hard-mode](https://raw.githubusercontent.com/minteapixel/rgb-game/master/screenshots/hard-mode_rgb-game.png)
-![infernal-mode](https://raw.githubusercontent.com/minteapixel/rgb-game/master/screenshots/infernal-mode_rgb-game.png)
+<img src="https://raw.githubusercontent.com/minteapixel/rgb-game/master/screenshots/hard-mode_rgb-game.png" width="150px">
+<img src="https://raw.githubusercontent.com/minteapixel/rgb-game/master/screenshots/infernal-mode_rgb-game.png" width="256px">
 
 
 ## Built with:
