@@ -2,38 +2,53 @@
 <html>
 <head>
 	<title>Color Game</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<h1> The Great
-	<br>
-	<span id="colorDisplay">RGB</span>
-	<br>
-	Color Game</h1>
-
-<div id="stripe">
-	<button id="reset">New Colors</button>
-	<span>&nbsp; &nbsp; &nbsp;</span>
-	<button class="mode">Easy</button>
-	<button class="mode selected">Hard</button>
-	<button class="mode">Expert</button>
-</div>
-
-<div id="container">
-	<div id="message"></div>
-
-	<div id="container2">
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
+	<div class="root">
+		<div class="container container__header">
+			<h1> 
+				<span id="colorDisplay">RGB</span>
+				<br>
+				Color Game
+			</h1>
+		<div class="nav">
+				<button id="reset">New Colors</button>
+				<span>&nbsp; &nbsp; &nbsp;</span>
+				<button class="mode">Easy</button>
+				<button class="mode selected">Hard</button>
+				<button class="mode">Expert</button>
+				<button class="mode">Infernal</button>
+			</div>
+		</div>
+			
+				
+				<div class="container">
+					<div class="message">How to play: Find the square whose color matches the above RGB value.</div>
+					<div class="message message--red"></div>
+					<div class="grid">
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+					</div>
+				
+					<footer class="center"><p>&nbsp;</p><p>
+						&copy; 2019 - <a href="https://github.com/minteapixel/">Eileen L.</a> | <a href="https://github.com/minteapixel/rgb-game">GitHub Repo</a>
+					</p></footer>
+				</div>
 	</div>
-</div>
+	
 
 
 <script type="text/javascript" src="scripts.js"></script>

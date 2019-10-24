@@ -1,7 +1,8 @@
 body {
-	background-color: #232323;
+	background-color: #ddd;
+	font: 16px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	line-height: 1.7;
 	margin: 0;
-	font-family: "Arial", sans-serif;
 }
 
 h1 {
@@ -12,29 +13,53 @@ h1 {
 	text-transform: uppercase;
 	background-color: #008A6B;
 	margin: 0;
-	padding: 20px 0;
+	padding: 1rem;
 }
 
-#container {
-	max-width: 600px;
+#root {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.center {
+	text-align: center;
+}
+
+.container {
+	padding-bottom: 2rem;
+}
+
+.container__header {
+	width: 100vw;
+}
+
+.container__grid {
+	width: 80vw;
 	margin: 0 auto;
 }
 
-#container2 {
-	margin: 0 auto;
+.caps {
+	text-transform: uppercase;
+	text-align: center;
 }
 
-#message {
-	color: #FFF;
+.message {
+	color: #232323;
 	line-height: 3em;
-	font-weight: bold;
 	margin: 0 auto;
 	text-align: center;
 }
 
-#stripe {
-	background-color: white;
-	height: 30px;
+.message--red {
+	font-weight: bold;
+	color: #ef5656;
+}
+
+.nav {
+	background-color: #fff;
 	text-align: center;
 }
 
@@ -43,15 +68,29 @@ h1 {
 }
 
 .square {
-	width: 30%;
-	background: purple;
-	padding-bottom: 30%;
-	float: left;
-	margin: 1.66%;
 	border-radius: 10%;
+	margin: 10px;
+	background-color: #5f7d8e;
+	font-size: 16px;
+	cursor: pointer;
+	color: #fff;
+	width: 33vw;
+	height: 33vw;
+	max-width: 100px;
+	max-height: 100px;
 	transition: background 0.6s;
 	-webkit-transition: background 0.6s;
 	-moz-transition: background 0.6s;
+}
+
+.grid {
+	/* display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	justify-items: center; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .selected {
@@ -59,7 +98,7 @@ h1 {
 	color: white;
 }
 
-button {
+button { /* nav buttons */
 	color: #008A6B;
 	border: none;
 	background: none;
@@ -76,4 +115,22 @@ button {
 button:hover {
 	color: white;
 	background-color: #008A6B;
+}
+
+/* MOBILE SCREENS */
+@media screen and (max-width: 768px) {
+	body {
+		line-height: 1.3;
+	}
+	.container {
+		/* width: 80vw;
+		padding: 0 1.2rem; */
+	}
+	.nav {
+		display: flex;
+		flex-direction: column;
+	}
+	button {
+		padding: 1rem;
+	}
 }
